@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="adoptionBlog">
+  <head>
+    <title>THE BEST ADOPTION BLOG EVER!! :)</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/angular.min.js"></script>
+    <script src="/javascripts/angular-route.min.js"></script>
+    <script src="/javascripts/app.js"></script>
+    <script src="/javascripts/PostsCtrl.js"></script>
+    <script src="/javascripts/AdminCreateCtrl.js"></script>
+    <script src="/javascripts/AdminDeleteCtrl.js"></script>
+  </head>
+  <body>
+
+  <header>
+    <img src="/images/logo.png" alt="piano key necktie">
+    <hr>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/admin">Admin</a></li>
+      <li><a href="/create">Add Post</a></li>
+      <li><a href="/dogs">See dogs</a></li>
+      <li><a href="/cats">See cats</a></li>
+    </ul>
+  </header>
+
+  <!--//this is similar to yield in erb or body in hbs-->
+<div ng-view></div>
+
+ <footer>
+   <hr>&copy 2016 through forever
+ </footer>
+
+  </body>
+</html>
